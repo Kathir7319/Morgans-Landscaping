@@ -82,7 +82,10 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-100 aspect-[4/3] sm:aspect-[4/3] lg:aspect-[1/1]">
                 <img
-                  src="https://images.unsplash.com/photo-1592417817098-8f3d6910609b?auto=format&fit=crop&w=1200&q=85"
+                  src="/images/hero-yard.jpg"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=85";
+                  }}
                   alt="Lush green lawn with decorative river rock foundation bed"
                   className="w-full h-full object-cover"
                 />

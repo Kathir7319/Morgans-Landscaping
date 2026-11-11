@@ -224,6 +224,9 @@ export default function GalleryQuotePage() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                   <img
                     src={item.image}
+                    onError={(e) => {
+                      e.currentTarget.src = item.fallbackImage || "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=80";
+                    }}
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

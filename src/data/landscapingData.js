@@ -32,7 +32,8 @@ export const SOD_VARIETIES = [
     maintenanceLevel: "Moderate (Fast summer growth, low water after root establishment)",
     winterDormancy: "Goes golden dormant in late fall/winter, bounces back early spring",
     color: "Warm medium-to-deep green",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d6910609b?auto=format&fit=crop&w=800&q=80"
+    image: "/images/bermuda.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "zoysia",
@@ -48,7 +49,8 @@ export const SOD_VARIETIES = [
     maintenanceLevel: "Low to Moderate (Fewer mowings, natural weed choke)",
     winterDormancy: "Dormant in winter, maintains dense protective thatch",
     color: "Lush emerald green",
-    image: "https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80"
+    image: "/images/zoysia.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "tall-fescue",
@@ -64,7 +66,8 @@ export const SOD_VARIETIES = [
     maintenanceLevel: "Moderate (Loves spring and autumn, needs summer watering)",
     winterDormancy: "No dormancy — vibrant green all 12 months",
     color: "Rich deep forest green",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+    image: "/images/tall-fescue.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -108,7 +111,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Natural River Rock & Stone",
     neighborhood: "Wendell Falls, NC",
     description: "Installed 1\"-3\" washed North Carolina river rock with commercial-grade puncture-resistant fabric and spade-cut trenching along foundation and HVAC units.",
-    image: "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/rock-bed-1.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=80",
     highlights: ["1\"–3\" River Rock", "Commercial Weed Barrier", "Permanent Maintenance-Free"]
   },
   {
@@ -118,7 +122,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Natural River Rock & Stone",
     neighborhood: "Knightdale Station, NC",
     description: "Sculpted perimeter border wrapping around front porch columns and sidewalk. Will never blow away in Carolina summer thunderstorms.",
-    image: "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/rock-bed-2.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Zero Annual Replacement", "Clean Crisp Lines", "High Curb Appeal"]
   },
   {
@@ -128,7 +133,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Natural River Rock & Stone",
     neighborhood: "Planters Walk, NC",
     description: "Replaced muddy grass edging alongside stamped concrete patio with decorative stone ribbon for clean transitions and mud-free dog paws.",
-    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/rock-bed-3.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Pet-Friendly Border", "Mud Elimination", "Patio Accenting"]
   },
 
@@ -140,7 +146,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Drainage & Dry Creek Beds",
     neighborhood: "Wendell Falls, NC",
     description: "Functional naturalized rock channel designed to intercept gutter downspout surges and guide stormwater gently to the property swale.",
-    image: "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/drainage-1.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Slab Moisture Protection", "Heavy Rain Defense", "Naturalistic Creek Look"]
   },
   {
@@ -150,7 +157,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Drainage & Dry Creek Beds",
     neighborhood: "Harper's Landing, NC",
     description: "High-velocity stone basin preventing water tunneling into newly graded backyard subsoil. Solved pooling issue in 1 afternoon.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/drainage-2.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Erosion Elimination", "Subdivision Swale Flow", "Engineered Slope"]
   },
 
@@ -162,7 +170,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Hardwood & Bark Mulch",
     neighborhood: "Knightdale, NC",
     description: "Triple-shredded dark brown hardwood mulch installed with 3-inch spade-cut edges for striking contrast against emerald lawn turf.",
-    image: "https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/mulch-1.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Triple-Shredded Organic", "Weed Deprivation", "Soil Moisture Retention"]
   },
   {
@@ -172,7 +181,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Hardwood & Bark Mulch",
     neighborhood: "Wendell, NC",
     description: "Freshly dressed foundation planting bed giving immediate move-in warmth to a new construction craftsman home.",
-    image: "https://images.unsplash.com/photo-1527842891421-42eec6e703ea?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/mulch-2.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1527842891421-42eec6e703ea?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Rich Natural Color", "Crisp Walkway Border", "HOA Guideline Compliant"]
   },
 
@@ -184,7 +194,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Full Yard Makeovers",
     neighborhood: "Wendell Falls, NC",
     description: "Transformed builder-grade clay pit into 2,400 sq. ft. of tight Bermuda sod with perimeter river stone edging and fence line mulch beds.",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d6910609b?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/sod-after.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Before: Bare Clay", "After: Pristine Turf", "Completed in 36 Hours"]
   },
   {
@@ -194,7 +205,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Full Yard Makeovers",
     neighborhood: "Knightdale Station, NC",
     description: "Complete grading leveling, soil amendment with nutrient rich topsoil, and roll-out farm fresh Tall Fescue sod for an instant play lawn.",
-    image: "https://images.unsplash.com/photo-1599818816942-83508493198e?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/hero-yard.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Level Yard Grading", "Instant Play-Ready", "Zero Mud for Dogs"]
   },
   {
@@ -204,7 +216,8 @@ export const GALLERY_ITEMS = [
     categoryLabel: "Full Yard Makeovers",
     neighborhood: "Wake County Subdivisions, NC",
     description: "Palletized premium Zoysia turf with decorative river rock foundation accents that increased neighborhood appraisal interest instantly.",
-    image: "https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/makeover-1.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80",
     highlights: ["Luxury Lawn Quality", "Clean Bed Transition", "Turnkey Post-Closing"]
   }
 ];

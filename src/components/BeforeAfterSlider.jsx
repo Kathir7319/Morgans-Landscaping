@@ -25,7 +25,7 @@ export default function BeforeAfterSlider() {
   };
 
   return (
-    <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-stone-200/90 relative overflow-hidden">
+    <div className="bg-white rounded-3xl p-5 sm:p-8 shadow-xl border border-stone-200/90 relative overflow-hidden">
       {/* Background soft decoration */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-100/30 rounded-full blur-3xl pointer-events-none" />
 
@@ -47,6 +47,7 @@ export default function BeforeAfterSlider() {
         {/* Quick Position Controls */}
         <div className="flex items-center gap-2 bg-stone-100 p-1 rounded-xl self-start md:self-auto border border-stone-200">
           <button
+            type="button"
             onClick={() => setSliderPosition(10)}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
               sliderPosition <= 20 ? 'bg-amber-700 text-white shadow-sm' : 'text-stone-700 hover:text-stone-900'
@@ -55,6 +56,7 @@ export default function BeforeAfterSlider() {
             Bare Clay
           </button>
           <button
+            type="button"
             onClick={() => setSliderPosition(50)}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
               sliderPosition > 35 && sliderPosition < 65 ? 'bg-emerald-800 text-white shadow-sm' : 'text-stone-700 hover:text-stone-900'
@@ -63,6 +65,7 @@ export default function BeforeAfterSlider() {
             50/50 Split
           </button>
           <button
+            type="button"
             onClick={() => setSliderPosition(90)}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
               sliderPosition >= 80 ? 'bg-emerald-700 text-white shadow-sm' : 'text-stone-700 hover:text-stone-900'
@@ -76,7 +79,7 @@ export default function BeforeAfterSlider() {
       {/* Main Draggable Comparison Stage */}
       <div
         ref={containerRef}
-        className="relative h-72 sm:h-96 md:h-[420px] rounded-2xl overflow-hidden select-none cursor-ew-resize shadow-inner border border-stone-300"
+        className="relative h-72 sm:h-96 md:h-[420px] rounded-2xl overflow-hidden select-none cursor-ew-resize shadow-inner border border-stone-300 bg-stone-900"
         onMouseDown={() => setIsDragging(true)}
         onMouseUp={() => setIsDragging(false)}
         onMouseLeave={() => setIsDragging(false)}
@@ -88,10 +91,12 @@ export default function BeforeAfterSlider() {
         {/* Layer 1: AFTER Image (Underneath) */}
         <div className="absolute inset-0 w-full h-full">
           <img
-            src="https://images.unsplash.com/photo-1592417817098-8f3d6910609b?auto=format&fit=crop&w=1400&q=85"
-            alt="Lush green Bermuda sod yard with river rock border"
+            src="/images/sod-after.jpg"
+            onError={(e) => {
+              e.currentTarget.src = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85";
+            }}
+            alt="Lush green sod yard with river rock border"
             className="w-full h-full object-cover"
-            loading="lazy"
           />
           {/* After Floating Tag */}
           <div className="absolute top-4 right-4 z-10 bg-emerald-900/90 text-white px-3.5 py-1.5 rounded-full text-xs font-extrabold flex items-center gap-1.5 shadow-lg backdrop-blur-sm border border-emerald-400/40">
@@ -114,10 +119,12 @@ export default function BeforeAfterSlider() {
           {/* Note: width must match full container so image doesn't squish */}
           <div className="relative h-full w-[200%] sm:w-[150%] md:w-[120%] lg:w-full">
             <img
-              src="https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1400&q=85"
+              src="/images/clay-before.jpg"
+              onError={(e) => {
+                e.currentTarget.src = "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1400&q=85";
+              }}
               alt="Bare builder red clay dirt lot with mud and washouts"
               className="w-full h-full object-cover filter contrast-125 sepia-[0.35] brightness-90"
-              loading="lazy"
             />
             {/* Before Floating Tag */}
             <div className="absolute top-4 left-4 z-10 bg-amber-950/90 text-amber-200 px-3.5 py-1.5 rounded-full text-xs font-extrabold flex items-center gap-1.5 shadow-lg backdrop-blur-sm border border-amber-600/50">

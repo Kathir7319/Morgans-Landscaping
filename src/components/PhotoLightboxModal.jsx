@@ -24,6 +24,9 @@ export default function PhotoLightboxModal({ item, onClose, onSelectForQuote }) 
         <div className="md:w-3/5 bg-stone-950 flex items-center justify-center overflow-hidden relative min-h-[260px] sm:min-h-[360px]">
           <img
             src={item.image}
+            onError={(e) => {
+              e.currentTarget.src = item.fallbackImage || "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=80";
+            }}
             alt={item.title}
             className="w-full h-full object-cover"
           />
